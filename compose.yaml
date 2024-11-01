@@ -1,0 +1,13 @@
+services:
+  vim_image:
+    image: vim_image
+    container_name: vim_container
+    volumes:
+      - ./:/mrslessondocker
+    tty: true
+
+  neofetch_image:
+    image: neofetch_image
+    container_name: neofetch_container
+    restart: always
+    tty: true
